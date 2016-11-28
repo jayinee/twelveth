@@ -1,0 +1,284 @@
+<html>
+<head>
+
+  <!-- components styles -->
+  <link rel="stylesheet" href="collapsible/style.css"> 
+  <link rel="stylesheet" href="dropdown/style.css"> 
+  <link rel="stylesheet" href="modal/style.css"> 
+  <link rel="stylesheet" href="wave/style.css"> 
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  
+  <!-- github page styles -->
+  <link rel="stylesheet" href="style.css"> 
+  
+ </head>
+<body>
+
+  
+  <ul id="section-menu">
+  <li>
+    <a id="nav_One" href="#section-one" class="active">
+        Collapsible
+    </a>
+    </li>
+    <li>
+        <a id="nav_Two" href="#section-two" class="">
+            Dropdown
+        </a>
+    </li>
+    <li>
+        <a id="nav_Three" href="#section-three" class="">
+          Modal
+        </a>
+    </li>
+    <li>
+        <a id="nav_Four" href="#section-four" class="">
+            Wave
+        </a>
+    </li>
+</ul>
+
+<section class="section" id="section-one">
+  <h2 class="title"> Collapsible</h2>
+  
+  <div class="component-container">
+   <ul class="accordion">
+    <li class="accordion__item">
+      <input class="checkbox" type="checkbox" checked>
+      <i class="icon fa fa-angle-double-down fa-2x" aria-hidden="true"></i>
+      <h2 class="title">title one</h2>
+      <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis ut lorem ut faucibus. Donec hendrerit iaculis felis vitae bibendum. In molestie lacinia est, at auctor urna. Proin sit amet lacinia ligula, eu imperdiet dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus sollicitudin aliquam. Aenean eu dui euismod, mollis purus vitae, euismod purus. Integer semper aliquam imperdiet. Curabitur vel nisl tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in lectus turpis. Nullam arcu leo, volutpat eget sapien id, fringilla faucibus ligula. Phasellus tempor eget erat sed mattis. Nam cursus tempus semper.</p>
+    </li>
+    <li class="accordion__item">
+      <input class="checkbox" type="checkbox" checked>
+      <i class="icon fa fa-angle-double-down fa-2x" aria-hidden="true"></i>
+      <h2 class="title">title two</h2>
+      <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis ut lorem ut faucibus. Donec hendrerit iaculis felis vitae bibendum. In molestie lacinia est, at auctor urna. Proin sit amet lacinia ligula, eu imperdiet dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus sollicitudin aliquam. Aenean eu dui euismod, mollis purus vitae, euismod purus. Integer semper aliquam imperdiet. Curabitur vel nisl tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in lectus turpis. Nullam arcu leo, volutpat eget sapien id, fringilla faucibus ligula. Phasellus tempor eget erat sed mattis. Nam cursus tempus semper.</p>
+    </li>
+    <li class="accordion__item">
+      <input class="checkbox" type="checkbox" checked>
+      <i class="icon fa fa-angle-double-down fa-2x" aria-hidden="true"></i>
+      <h2 class="title">title three</h2>
+      <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis ut lorem ut faucibus. Donec hendrerit iaculis felis vitae bibendum. In molestie lacinia est, at auctor urna. Proin sit amet lacinia ligula, eu imperdiet dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus sollicitudin aliquam. Aenean eu dui euismod, mollis purus vitae, euismod purus. Integer semper aliquam imperdiet. Curabitur vel nisl tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in lectus turpis. Nullam arcu leo, volutpat eget sapien id, fringilla faucibus ligula. Phasellus tempor eget erat sed mattis. Nam cursus tempus semper.</p>
+    </li>
+  </ul>
+  </div>
+</section>
+
+<section class="section" id="section-two">
+  <h2 class="title">Dropdown</h2>
+  
+    <div class="component-container">
+   <nav role="navigation" aria-label="Main menu">
+    <ul class="menu" role="menubar" aria-hidden="true">
+      <li class="menu__item">
+        <input class="menu__radio" id="menu--0" type="radio" name="status" checked>
+      </li>
+      <!-- First drop down menu -->
+      <li class="menu__item" role="menuitem" tabindex="0">
+        <label class="menu__label" for="menu--1">menu 1</label>
+        <input class="menu__radio" id="menu--1" type="radio" name="status">
+        <label for="menu--0" class="trigger--close"></label>
+        <ul class="submenu" role="menu" aria-hidden="true">
+          <li role="menuitem" tabindex="-1">
+              <a class="link" href="http://www.espn.com" title="First Link">
+                espn
+              </a>
+          </li>
+          <li role="menuitem" tabindex="-1">
+            <a class="link" href="http://www.google.com" title="Second Link">
+              google
+            </a>
+          </li role="menuitem" tabindex="-1">
+          <li>
+            <a class="link" href="http://www.amazon.com" title="Third Link">
+              amazon
+            </a>
+          </li>
+          <li role="menuitem" tabindex="-1">
+            <a class="link" href="#">
+              horizontal effect
+            </a>
+            <ul class="submenu" role="menu" aria-hidden="true">
+              <li role="menuitem" tabindex="-2">
+                  <a class="link" href="http://codepen.io/" title="First sub Link">
+                    codepen
+                  </a>
+              </li>
+              <li role="menuitem" tabindex="-2">
+                <a class="link" href="http://http://www.w3schools.com/" title="Second sub Link">
+                  w3schools
+                </a>
+              </li role="menuitem" tabindex="-2">
+              <li>
+                <a class="link" href="http://materializecss.com/" title="Third sub Link">
+                  materializecss
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li role="menuitem" tabindex="-1">
+            <a class="link" href="#">
+              vertical effect
+            </a>
+            <ul class="submenu submenu--effect-vertical" role="menu" aria-hidden="true">
+              <li role="menuitem" tabindex="-2">
+                  <a class="link" href="http://codepen.io/" title="First sub Link">
+                    codepen
+                  </a>
+              </li>
+              <li role="menuitem" tabindex="-2">
+                <a class="link" href="http://http://www.w3schools.com/" title="Second sub Link">
+                  w3schools
+                </a>
+              </li role="menuitem" tabindex="-2">
+              <li>
+                <a class="link" href="http://materializecss.com/" title="Third sub Link">
+                  materializecss
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <!-- Second drop down menu -->
+      <li class="menu__item" role="menuitem" tabindex="0">
+        <label class="menu__label" for="menu--2">menu 2</label>
+        <input class="menu__radio" id="menu--2" type="radio" name="status">
+        <label for="menu--0" class="trigger--close"></label>
+        <ul class="submenu" role="menu" aria-hidden="true">
+          <li role="menuitem" tabindex="-1">
+              <a class="link" href="https://learn.moderndeveloper.com" title="First Link">
+                learn
+              </a>
+          </li>
+          <li role="menuitem" tabindex="-1">
+            <a class="link" href="https://github.com" title="Second Link">
+              github.com
+            </a>
+          </li>
+          <li role="menuitem" tabindex="-1">
+            <a class="link" href="https://jsfiddle.net" title="Third Link">
+              jsfiddle.net
+            </a>
+          </li>
+                    <li role="menuitem" tabindex="-1">
+            <a class="link" href="#">
+              diagonal effect
+            </a>
+            <ul class="submenu submenu--effect-diagonal" role="menu" aria-hidden="true">
+              <li role="menuitem" tabindex="-2">
+                  <a class="link" href="http://codepen.io/" title="First sub Link">
+                    codepen
+                  </a>
+              </li>
+              <li role="menuitem" tabindex="-2">
+                <a class="link" href="http://http://www.w3schools.com/" title="Second sub Link">
+                  w3schools
+                </a>
+              </li role="menuitem" tabindex="-2">
+              <li>
+                <a class="link" href="http://materializecss.com/" title="Third sub Link">
+                  materializecss
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  </div>     
+</section>
+
+<section class="section" id="section-three">
+  <h2 class="title"> Modal</h2>
+  
+    <div class="component-container">
+  
+  <!-- Normal modal -->
+    <div class="modal">
+      <label class="modal__trigger" for="modal_status">
+        modal
+      </label>
+      <input class="input--checkbox" id="modal_status" type="checkbox">
+      <div class="overlay"></div>
+      <!-- Modal Window -->
+      <article class="modal__container modal__container--top">
+        <header class="modal__header">
+          <h3 class="title">Modal Header</h3>
+          <p>Content here</p>
+        </header>
+        <footer class="modal__footer">
+          <label for="modal_status">close</label>
+        </footer>
+      </article>
+    </div>
+
+    <!-- Normal from bottom -->
+    <div class="modal modal--2">
+      <label class="modal__trigger" for="modal_status2">
+        modal from bottom
+      </label>
+      <input class="input--checkbox" id="modal_status2" type="checkbox">
+      <div class="overlay"></div>
+      <!-- Modal Window -->
+      <article class="modal__container modal__container--bottom">
+        <header class="modal__header">
+          <h3 class="title">Modal Header</h3>
+          <p>Content here</p>
+        </header>
+        <footer class="modal__footer">
+          <label for="modal_status2">close</label>
+        </footer>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="section-four">
+  <h2 class="title">Wave</h2>
+
+   <div class="component-container">
+<div class="button">
+      <a id="link" href="#" title="link">wave</a>
+      <div>
+          <input type="checkbox" id="input-1">
+          <label for="input-1"></label>
+      </div>
+      <div>
+          <input type="checkbox" id="input-2">
+          <label for="input-2"></label>
+      </div>
+      <div>
+          <input type="checkbox" id="input-3">
+          <label for="input-3"></label>
+      </div>
+      <div>
+          <input type="checkbox" id="input-4">
+          <label for="input-4"></label>
+      </div>
+      <div>
+          <input type="checkbox" id="input-5">
+          <label for="input-5"></label>
+      </div>
+      <div>
+          <input type="checkbox" id="input-6">
+          <label for="input-6"></label>
+      </div>
+      <div>
+          <input type="checkbox" id="input-7">
+          <label for="input-7"></label>
+      </div>
+      <div>
+          <input type="checkbox" id="input-8">
+          <label for="input-8"></label>
+      </div>
+    </div>  
+  </div>
+</section>
+ 
+</body>
+</html>

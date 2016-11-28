@@ -1,0 +1,131 @@
+.menu {
+  font-size: 16px;
+  line-height: 1.5em;
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  box-sizing: border-box;
+}
+
+.manu a {
+  text-decoration: none;
+}
+
+.menu .menu__item:first-child,
+.menu .menu__radio {
+  display: none;
+}
+
+.menu .menu__item {
+  display: inline-block;
+  position: relative;
+  background-color: #2196f3;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: .5px;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  outline: none;
+  cursor: pointer;
+}
+
+.menu .menu__item:hover {
+  background-color: #1183de;
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+}
+
+.menu .menu__label {
+  display: block;
+  padding: 1em 2em;
+  font-weight: 200;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.menu .menu__item input.menu__radio:checked ~ .submenu {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.menu .menu__item input.menu__radio:checked + .trigger--close {
+  display: block;
+}
+
+.menu .submenu {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  list-style-type: none;
+  opacity: 0;
+  transform-origin: top center;
+  transform: scaleY(0);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  transition: all .2s ease-out;
+}
+
+.menu .submenu li {
+  position: relative;
+  display: block;
+}
+
+.menu .submenu li:hover {
+  background-color: rgba(150, 243, 33, 0.47);
+}
+
+.menu .submenu .link {
+  display: block;
+  padding: 14px 16px;
+  color: #26a69a;
+  text-decoration: none;
+}
+
+.menu .trigger--close {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Sub submenu */
+.menu .submenu .submenu {
+  visibility: hidden;
+  transform: scale(1);
+}
+
+.menu .submenu li:hover> .submenu {
+  visibility: visible;
+  left: 100%;
+  opacity: 1;
+}
+
+.menu .submenu .submenu {
+  left: 200px;
+  position: absolute;
+  top: 0px;
+}
+
+/* sub effect 2 - vertical */
+.submenu--effect-vertical {
+  left: 100%!important;
+  transform: scaleY(0) !important;
+}
+
+.menu .submenu li:hover> .submenu--effect-vertical  {
+  transform: scaleY(1) !important;
+}
+
+/* sub effect 3 - diagonal */
+.submenu--effect-diagonal  {
+  transform: scaleY(0) !important;
+}
+
+.menu .submenu li:hover> .submenu--effect-diagonal  {
+  transform: scaleY(1) !important;
+}

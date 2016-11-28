@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Collapsible</title>
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet"
+          href="//fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700">
+
+    <!-- Icons
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+
+  <body>
+
+  <!--
+
+  Using the sibling and checked selectors, we can determine the styling of sibling elements based on the checked state of the checkbox input element
+
+  By making the open state default for when :checked isn't detected, the accordian is accessable for browsers that don't recognize :checked. The fallback is simply an open accordion. The accordion can be manipulated with Javascript (if needed) by changing the "checked" property of the input element.
+
+  -->
+
+  <ul class="accordion">
+    <li class="accordion__item">
+      <input class="checkbox" type="checkbox" checked>
+      <i class="icon fa fa-angle-double-down fa-2x" aria-hidden="true"></i>
+      <h2 class="title">title one</h2>
+      <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis ut lorem ut faucibus. Donec hendrerit iaculis felis vitae bibendum. In molestie lacinia est, at auctor urna. Proin sit amet lacinia ligula, eu imperdiet dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus sollicitudin aliquam. Aenean eu dui euismod, mollis purus vitae, euismod purus. Integer semper aliquam imperdiet. Curabitur vel nisl tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in lectus turpis. Nullam arcu leo, volutpat eget sapien id, fringilla faucibus ligula. Phasellus tempor eget erat sed mattis. Nam cursus tempus semper.</p>
+    </li>
+    <li class="accordion__item">
+      <input class="checkbox" type="checkbox" checked>
+      <i class="icon fa fa-angle-double-down fa-2x" aria-hidden="true"></i>
+      <h2 class="title">title two</h2>
+      <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis ut lorem ut faucibus. Donec hendrerit iaculis felis vitae bibendum. In molestie lacinia est, at auctor urna. Proin sit amet lacinia ligula, eu imperdiet dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus sollicitudin aliquam. Aenean eu dui euismod, mollis purus vitae, euismod purus. Integer semper aliquam imperdiet. Curabitur vel nisl tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in lectus turpis. Nullam arcu leo, volutpat eget sapien id, fringilla faucibus ligula. Phasellus tempor eget erat sed mattis. Nam cursus tempus semper.</p>
+    </li>
+    <li class="accordion__item">
+      <input class="checkbox" type="checkbox" checked>
+      <i class="icon fa fa-angle-double-down fa-2x" aria-hidden="true"></i>
+      <h2 class="title">title three</h2>
+      <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis ut lorem ut faucibus. Donec hendrerit iaculis felis vitae bibendum. In molestie lacinia est, at auctor urna. Proin sit amet lacinia ligula, eu imperdiet dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus sollicitudin aliquam. Aenean eu dui euismod, mollis purus vitae, euismod purus. Integer semper aliquam imperdiet. Curabitur vel nisl tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in lectus turpis. Nullam arcu leo, volutpat eget sapien id, fringilla faucibus ligula. Phasellus tempor eget erat sed mattis. Nam cursus tempus semper.</p>
+    </li>
+  </ul>
+
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Modal</title>
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet"
+          href="//fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <!-- Normal modal -->
+    <div class="modal">
+      <label class="modal__trigger" for="modal_status">
+        modal
+      </label>
+      <input class="input--checkbox" id="modal_status" type="checkbox">
+      <div class="overlay"></div>
+      <!-- Modal Window -->
+      <article class="modal__container modal__container--top">
+        <header class="modal__header">
+          <h3 class="title">Modal Header</h3>
+          <p>Content here</p>
+        </header>
+        <footer class="modal__footer">
+          <label for="modal_status">close</label>
+        </footer>
+      </article>
+    </div>
+
+    <!-- Normal from bottom -->
+    <div class="modal modal--2">
+      <label class="modal__trigger" for="modal_status2">
+        modal from bottom
+      </label>
+      <input class="input--checkbox" id="modal_status2" type="checkbox">
+      <div class="overlay"></div>
+      <!-- Modal Window -->
+      <article class="modal__container modal__container--bottom">
+        <header class="modal__header">
+          <h3 class="title">Modal Header</h3>
+          <p>Content here</p>
+        </header>
+        <footer class="modal__footer">
+          <label for="modal_status2">close</label>
+        </footer>
+      </article>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Wave</title>
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet"
+          href="//fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+
+    <!--
+
+      This Wave effect is higly experimental.
+      It is in pure CSS and currently works only in Google Chrome
+
+      Basic Idea
+
+        Since with CSS we can't identify the exact coords of the mouse
+        when this latter clicks a specific location on the button,
+        we used a DIV as container and we've split it into 8 regions using
+        inputs and labels
+
+        Every time a checkbox is clicked throug its label, we trigger the "Wave"
+        effect using its ":after" pseudo-selector element
+
+        Also the inner link works well and provides a central wave effect when
+        we click on it
+
+    -->
+
+    <div class="button">
+      <a id="link" href="#" title="link">wave</a>
+      <div>
+          <input type="checkbox" id="input-1">
+          <label for="input-1"></label>
+      </div>
+      <div>
+          <input type="checkbox" id="input-2">
+          <label for="input-2"></label>
+      </div>
+      <div>
+          <input type="checkbox" id="input-3">
+          <label for="input-3"></label>
+      </div>
+      <div>
+          <input type="checkbox" id="input-4">
+          <label for="input-4"></label>
+      </div>
+      <div>
+          <input type="checkbox" id="input-5">
+          <label for="input-5"></label>
+      </div>
+      <div>
+          <input type="checkbox" id="input-6">
+          <label for="input-6"></label>
+      </div>
+      <div>
+          <input type="checkbox" id="input-7">
+          <label for="input-7"></label>
+      </div>
+      <div>
+          <input type="checkbox" id="input-8">
+          <label for="input-8"></label>
+      </div>
+    </div>
+
+  </body>
+</html>
